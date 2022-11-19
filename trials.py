@@ -18,7 +18,13 @@ def get_all_evens(nums):
 
 
 def get_odd_indices(items):
-    pass  # TODO: replace this line with your code
+    result = []
+
+    for ind in range(len(items)):
+        if ind % 2 != 0:
+            result.append(items[ind])
+
+    return result
 
 
 def print_as_numbered_list(items):
